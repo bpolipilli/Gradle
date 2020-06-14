@@ -3,19 +3,26 @@ pipeline
     agent any
     stages
     {
-        stage('Compile')
+        stage('Input Message')
         {
             steps
             {
                 echo 'Hi, This is Bhaskar'
             }
         }
-        stage('Unit test')
+        stage('Build')
         {
             steps
             {
-                sh './gradlew test'
+                sh './gradlew build'
             }
         }
+         stage('Help')
+         {
+            steps
+            {
+                sh './gradlew help'
+            }
+         }
     }
 }
