@@ -14,14 +14,14 @@ pipeline
         {
             steps
             {
-                sh './gradlew build'
+                sh 'gradle build'
             }
         }
          stage('Help')
          {
             steps
             {
-                sh './gradlew help'
+                sh 'gradle help'
             }
          }
     }
