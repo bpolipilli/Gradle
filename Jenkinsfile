@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                sh './gradlew compileJava'
+                echo 'Hi, This is Bhaskar'
             }
         }
         stage('Unit test')
