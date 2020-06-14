@@ -3,18 +3,18 @@ pipeline
     agent any
     stages
     {
-        stage(“Compile”)
+        stage('Compile')
         {
             steps
             {
-                sh “./gradlew compileJava”
+                sh './gradlew compileJava'
             }
         }
-        stage(“Unit test”)
+        stage('Unit test')
         {
             steps
             {
-                sh “./gradlew test”
+                sh './gradlew test'
             }
         }
     }
